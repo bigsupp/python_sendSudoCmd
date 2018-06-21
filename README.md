@@ -21,5 +21,7 @@ Information:
   # pip install paramiko
   ```
 - Test run on Python 2.x
-- Support logging stdout to files
+- Support logging stdout to log files: operation log and remote host log
+  - operation log: contains execution time and target hosts
+  - remote host log: contains execution time on target hosts and stdout
 - **Did not test with large numbers of remote host
