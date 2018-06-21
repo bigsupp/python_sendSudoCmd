@@ -6,7 +6,7 @@ Information:
   - Windows:
     -  D:\<Python installed directory>\Scripts\pip install paramiko
   - Linux:
-    -  # pip install paramiko
+    -  \# pip install paramiko
 - Test run on Python 2.x
 - Support logging stdout to files
 
