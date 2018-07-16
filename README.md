@@ -30,7 +30,7 @@ Information:
 
 Example of running the script:
 
-'''
+```
 $ python sendSudoCmd.py 192.168.150.19,10.9.11.210,192.168.150.55
 
 --------------------------------
@@ -81,4 +81,5 @@ root@radpolicy:~#
 ==> Result
 Total Done: 2
 Total Failed: 1
-'''
+
+```
