@@ -119,7 +119,7 @@ def main():
   logWriterMaster = LogWriter( os.path.join(os.getcwd(), "log", today + "_operation"  + ".log") )
   logWriterMaster.write("\n" + "----------------" + "\n")
   logWriterMaster.write("## Executed at " + today + "\n")
-  logWriterMaster.write( "## Entered %d host(s):\n" % len(hosts) )
+  logWriterMaster.write("## Entered %d host(s):\n" % len(hosts) )
 
   print ""
   print '--------------------------------'
@@ -152,6 +152,21 @@ def main():
   counter_total_done = len(list_host_done)
   counter_total_failed = (len(list_host_failed_auth) + len(list_host_failed_socket) + len(list_host_failed_ssh) + len(list_host_failed_hostkey))
 
+
+  logWriterMaster.write("\n## Total Done: %d" % counter_total_done)
+  for host in list_host_done:
+    logWriterMaster.write("\n%s" % host)
+  logWriterMaster.write("\n")
+  logWriterMaster.write("\n## Total Failed: %d" % counter_total_failed)
+  for host in list_host_failed_auth:
+    logWriterMaster.write("\n%s" % host)
+  for host in list_host_failed_socket:
+    logWriterMaster.write("\n%s" % host)
+  for host in list_host_failed_ssh:
+    logWriterMaster.write("\n%s" % host)
+  for host in list_host_failed_hostkey:
+    logWriterMaster.write("\n%s" % host)
+
   print ""
   print "==> END"
   print ""
@@ -174,3 +189,4 @@ list_host_failed_hostkey = []
 
 if __name__ == "__main__":
   main()
+
