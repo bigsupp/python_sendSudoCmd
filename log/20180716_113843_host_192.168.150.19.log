@@ -1,0 +1,9 @@
+
+----------------
+## Executed at 20180716_113843
+
+## Started for 192.168.150.19 at 2018-07-16 11:38:43
+
+sudo touch /opt/paramiko.log
+root@appservice01:~# sudo echo $(date) >> /opt/paramiko.log
+root@appservice01:~# 
